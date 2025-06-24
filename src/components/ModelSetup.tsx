@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
-import { Settings, Key, Zap, AlertCircle } from "lucide-react";
+import { Settings, Key, Zap, AlertCircle, Cloud } from "lucide-react";
 
 export function ModelSetup() {
   return (
@@ -35,6 +35,21 @@ export function ModelSetup() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
+            <div className="space-y-2">
+              <Label>모델 Provider</Label>
+              <Select>
+                <SelectTrigger className="bg-white">
+                  <SelectValue placeholder="Provider 선택" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="openai">OpenAI</SelectItem>
+                  <SelectItem value="anthropic">Anthropic</SelectItem>
+                  <SelectItem value="google">Google</SelectItem>
+                  <SelectItem value="cohere">Cohere</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
             <div className="space-y-2">
               <Label>모델 선택</Label>
               <Select>
@@ -84,6 +99,21 @@ export function ModelSetup() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
+            <div className="space-y-2">
+              <Label>모델 Provider</Label>
+              <Select>
+                <SelectTrigger className="bg-white">
+                  <SelectValue placeholder="Provider 선택" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="openai">OpenAI</SelectItem>
+                  <SelectItem value="anthropic">Anthropic</SelectItem>
+                  <SelectItem value="google">Google</SelectItem>
+                  <SelectItem value="cohere">Cohere</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+
             <div className="space-y-2">
               <Label>모델 선택</Label>
               <Select>
